@@ -1,0 +1,127 @@
+p {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.3);
+    height: 320px;
+    width: 200px;
+    margin-right: 20px;
+    vertical-align: top;
+    justify-content: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.profile-picture {
+    display: inline-block;
+}
+
+.sub-image {
+    object-fit: cover;
+    width: 27px;
+    height: 27px;
+    margin-top: 6px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.profile-extra-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.extra-info {
+    padding-top: 8px;
+    padding-left: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    color: rgb(125, 116, 116);
+}
+
+.button {
+    margin-top: 6px;
+    margin-left: 8px;
+    border: none;
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #316FF6;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .card-1,
+    .card-2 {
+        position: relative;
+        left: 230px;
+    }
+
+    .card-3,
+    .card-4 {
+        position: relative;
+        right: 210px;
+        top: 350px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .card-1 {
+        position: relative;
+        left: 340px;
+    }
+
+    .card-2 {
+        position: relative;
+        left: 120px;
+        top: 350px;
+    }
+
+    .card-3 {
+        position: relative;
+        right: 100px;
+        top: 700px;
+    }
+
+    .card-4 {
+        position: relative;
+        right: 320px;
+        top: 1050px;
+    }
+}
